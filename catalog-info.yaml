@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "test-rhdh-qe-2-team-owned"
+  annotations:
+    github.com/project-slug: janus-qe/test-rhdh-qe-2-team-owned
+    backstage.io/kubernetes-id: "developer-hub"
+    backstage.io/techdocs-ref: dir:.
+    janus-idp.io/tekton-enabled: "true"
+    azure-container-registry/repository-name: "hello-world"
+    jfrog-artifactory/image-name: "hello-world"
+    quay.io/repository-slug: "rhdh/rhdh-operator-bundle"
+    argocd/app-name: guestbook
+spec:
+  type: service
+  owner: janus-qe/rhdh-qe-2-team
+  lifecycle: experimental
